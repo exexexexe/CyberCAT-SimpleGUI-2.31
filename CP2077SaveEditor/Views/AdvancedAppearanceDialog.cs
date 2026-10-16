@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using WolvenKit.RED4.Save;
 using WolvenKit.RED4.Types;
+using CP2077SaveEditor.Utils;
 
 namespace CP2077SaveEditor
 {
@@ -18,6 +19,7 @@ namespace CP2077SaveEditor
         public AdvancedAppearanceDialog(gameuiCharacterCustomizationPresetWrapper container)
         {
             InitializeComponent();
+            Theme.Apply(this);
 
             _container = container;
 

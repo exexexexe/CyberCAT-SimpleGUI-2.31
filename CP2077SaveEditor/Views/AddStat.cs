@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using CP2077SaveEditor.Utils;
 
 namespace CP2077SaveEditor
 {
@@ -10,6 +11,7 @@ namespace CP2077SaveEditor
         public AddStat()
         {
             InitializeComponent();
+            Theme.Apply(this);
         }
 
         private void addButton_Click(object sender, EventArgs e)

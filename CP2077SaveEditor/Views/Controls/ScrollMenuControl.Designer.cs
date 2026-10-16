@@ -40,6 +40,7 @@
             this.btn_ScrollUp.BackColor = System.Drawing.Color.White;
             this.btn_ScrollUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btn_ScrollUp.ClickEffectEnabled = true;
+            this.btn_ScrollUp.Variant = CP2077SaveEditor.ButtonVariant.Ghost;
             this.btn_ScrollUp.DefaultColor = System.Drawing.Color.White;
             this.btn_ScrollUp.HoverColor = System.Drawing.Color.LightGray;
             this.btn_ScrollUp.Location = new System.Drawing.Point(0, 0);
@@ -57,6 +58,7 @@
             this.btn_ScrollDown.BackColor = System.Drawing.Color.White;
             this.btn_ScrollDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btn_ScrollDown.ClickEffectEnabled = true;
+            this.btn_ScrollDown.Variant = CP2077SaveEditor.ButtonVariant.Ghost;
             this.btn_ScrollDown.DefaultColor = System.Drawing.Color.White;
             this.btn_ScrollDown.HoverColor = System.Drawing.Color.LightGray;
             this.btn_ScrollDown.Location = new System.Drawing.Point(0, 380);
@@ -73,7 +75,7 @@
             this.pnl_Menu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnl_Menu.BackColor = System.Drawing.Color.White;
-            this.pnl_Menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_Menu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 20);
             this.pnl_Menu.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.pnl_Menu_MouseWheel);
             this.pnl_Menu.Name = "pnl_Menu";

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Windows.Forms;
+using CP2077SaveEditor.Utils;
 
 namespace CP2077SaveEditor
 {
@@ -14,6 +15,7 @@ namespace CP2077SaveEditor
         public AddFact()
         {
             InitializeComponent();
+            Theme.Apply(this);
         }
 
         public void LoadFactDialog(Action<string> callback, object _saveFile)

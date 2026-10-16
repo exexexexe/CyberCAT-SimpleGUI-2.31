@@ -21,6 +21,7 @@ namespace CP2077SaveEditor.Views
         public AddItem()
         {
             InitializeComponent();
+            Theme.Apply(this);
         }
 
         public void LoadDialog(SubInventory inventory, SaveFileHelper activeSaveFile)

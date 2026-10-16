@@ -66,10 +66,10 @@ namespace CP2077SaveEditor.Views.Controls
 
         private void SearchBoxGotFocus(object sender, EventArgs e)
         {
-            if (((TextBox)sender).Text == "Search" && ((TextBox)sender).ForeColor == Color.Silver)
+            if (((TextBox)sender).Text == "Search" && ((TextBox)sender).ForeColor == Theme.TextDim)
             {
                 ((TextBox)sender).Text = "";
-                ((TextBox)sender).ForeColor = Color.Black;
+                ((TextBox)sender).ForeColor = Theme.Text;
             }
         }
 
@@ -77,7 +77,7 @@ namespace CP2077SaveEditor.Views.Controls
         {
             if (((TextBox)sender).Text == "")
             {
-                ((TextBox)sender).ForeColor = Color.Silver;
+                ((TextBox)sender).ForeColor = Theme.TextDim;
                 ((TextBox)sender).Text = "Search";
             }
         }
@@ -113,7 +113,7 @@ namespace CP2077SaveEditor.Views.Controls
 
         private void factsSearchBox_TextChanged(object sender, EventArgs e)
         {
-            if (factsSearchBox.ForeColor != Color.Silver)
+            if (factsSearchBox.ForeColor != Theme.TextDim)
             {
                 RefreshFacts(factsSearchBox.Text);
             }

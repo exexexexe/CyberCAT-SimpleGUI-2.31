@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using CP2077SaveEditor.Views;
 using WolvenKit.RED4.Save.Classes;
+using CP2077SaveEditor.Utils;
 
 namespace CP2077SaveEditor
 {
@@ -16,6 +17,7 @@ namespace CP2077SaveEditor
         public ModNodeDetails()
         {
             InitializeComponent();
+            Theme.Apply(this);
         }
 
         private void txt_AttachmentName_TextChanged(object sender, EventArgs e)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using CP2077SaveEditor.Utils;
 
 namespace CP2077SaveEditor
 {
@@ -8,6 +9,7 @@ namespace CP2077SaveEditor
         public WrongDefaultDialog(string className, string prop, object value)
         {
             InitializeComponent();
+            Theme.Apply(this);
             errorBox.Text = "Please report this issue at https://github.com/Deweh/CyberCAT-SimpleGUI/issues" + Environment.NewLine +
                             "WrongDefaultValue" + Environment.NewLine + 
                             "Class Name: " + className + Environment.NewLine + 

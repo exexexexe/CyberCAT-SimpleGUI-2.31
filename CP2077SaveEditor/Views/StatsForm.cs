@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WolvenKit.RED4.Types;
+using CP2077SaveEditor.Utils;
 
 namespace CP2077SaveEditor.Views
 {
@@ -16,6 +17,7 @@ namespace CP2077SaveEditor.Views
         public StatsForm()
         {
             InitializeComponent();
+            Theme.Apply(this);
         }
 
         public void Init(string title, gameSavedStatsData gameSavedStatsData)

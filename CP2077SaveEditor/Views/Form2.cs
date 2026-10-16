@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CP2077SaveEditor.Extensions;
 using CP2077SaveEditor.ModSupport;
 using CP2077SaveEditor.Utils;
 using CP2077SaveEditor.Views.Controls;
@@ -18,6 +19,15 @@ using WolvenKit.RED4.Types;
 
 namespace CP2077SaveEditor.Views
 {
+    /// <summary>What the status line is currently reporting.</summary>
+    internal enum StatusKind
+    {
+        Idle,
+        Busy,
+        Ok,
+        Error,
+    }
+
     public partial class Form2 : Form, INotifyPropertyChanged
     {
         internal static TweakDBStringHelper TweakDbStringHelper;
@@ -44,6 +54,11 @@ namespace CP2077SaveEditor.Views
             RegisterControl(new QuestFactsControl(this));
             RegisterControl(new ExtrasControl(this));
 
+            // One pass over the whole tree. Controls added later (dialogs, inventory
+            // rows, appearance pickers) are picked up by the ControlAdded hook.
+            Theme.Apply(this);
+            filePathLabel.ForeColor = Theme.TextMuted;
+
             if (File.Exists(Environment.CurrentDirectory + "\\config.json"))
             {
                 try
@@ -68,13 +83,13 @@ namespace CP2077SaveEditor.Views
 
         private async void Form2_Load(object sender, EventArgs e)
         {
-            SetStatus("Init...");
+            SetStatus("Loading game data", StatusKind.Busy);
 
             await Init();
 
             openSaveButton.Enabled = true;
 
-            SetStatus("Idle");
+            SetStatus("Ready", StatusKind.Idle);
         }
 
         internal SaveFileHelper ActiveSaveFile
@@ -110,12 +125,31 @@ namespace CP2077SaveEditor.Views
 
             this.InvokeIfRequired(() =>
             {
-                if (pnl_Content.Controls.Count != 0)
+                // Swapping pages tears down one control tree and builds another; without
+                // holding the repaint the panel flashes its background in between.
+                var canSuspend = pnl_Content.IsHandleCreated;
+
+                if (canSuspend)
                 {
-                    pnl_Content.Controls.Clear();
+                    pnl_Content.SuspendDrawing();
                 }
 
-                pnl_Content.Controls.Add(userControl);
+                try
+                {
+                    if (pnl_Content.Controls.Count != 0)
+                    {
+                        pnl_Content.Controls.Clear();
+                    }
+
+                    pnl_Content.Controls.Add(userControl);
+                }
+                finally
+                {
+                    if (canSuspend)
+                    {
+                        pnl_Content.ResumeDrawing();
+                    }
+                }
             });
         }
 
@@ -157,7 +191,7 @@ namespace CP2077SaveEditor.Views
             openSaveButton.Enabled = false;
             saveChangesButton.Enabled = false;
 
-            SetStatus("Loading save...");
+            SetStatus("Reading save file", StatusKind.Busy);
 
             var status = EFileReadErrorCodes.NoCSav;
 
@@ -189,14 +223,18 @@ namespace CP2077SaveEditor.Views
                             this.InvokeIfRequired(() => { saveChangesButton.Enabled = true; });
                             break;
                         case EFileReadErrorCodes.NoCSav:
-                            MessageBox.Show("Failed to parse save file: File contains invalid data");
+                            this.InvokeIfRequired(() => MessageBox.Show(
+                                "Failed to parse save file: File contains invalid data",
+                                "Cannot read save", MessageBoxButtons.OK, MessageBoxIcon.Warning));
                             return;
                         case EFileReadErrorCodes.UnsupportedVersion:
                             fs.Position = 0;
                             reader.ReadFileInfo(out var info);
 
-                            MessageBox.Show(
-                                $"Failed to parse save file: Game version {info.Value.GameVersion} is not supported!");
+                            var version = info.Value.GameVersion;
+                            this.InvokeIfRequired(() => MessageBox.Show(
+                                $"Failed to parse save file: Game version {version} is not supported!",
+                                "Unsupported save version", MessageBoxButtons.OK, MessageBoxIcon.Warning));
                             return;
                         default:
                             throw new ArgumentOutOfRangeException();
@@ -231,21 +269,51 @@ namespace CP2077SaveEditor.Views
                 }
             }
 
-            SetStatus("Idle");
-
             openSaveButton.Enabled = true;
 
             if (status == EFileReadErrorCodes.NoError)
             {
                 pnl_Content.Enabled = true;
                 IsLoaded = true;
+                SetStatus("Save loaded", StatusKind.Ok);
+            }
+            else
+            {
+                SetStatus("Could not read that save", StatusKind.Error);
             }
         }
 
-        internal void SetStatus(string message)
+        internal void SetStatus(string message) => SetStatus(message, StatusKind.Idle);
+
+        /// <summary>
+        /// Writes the status line and, for <see cref="StatusKind.Busy"/>, runs the
+        /// activity strip and switches the cursor. Safe to call from a worker thread.
+        /// </summary>
+        internal void SetStatus(string message, StatusKind kind)
         {
-            this.InvokeIfRequired(() => { tssl_Status.Text = message; });
+            this.InvokeIfRequired(() =>
+            {
+                tssl_Status.Text = Glyph(kind) + "  " + message;
+                tssl_Status.ForeColor = kind switch
+                {
+                    StatusKind.Busy => Theme.Accent,
+                    StatusKind.Ok => Theme.Ok,
+                    StatusKind.Error => Theme.Danger,
+                    _ => Theme.TextMuted,
+                };
+
+                activityBar.Busy = kind == StatusKind.Busy;
+                Cursor = kind == StatusKind.Busy ? Cursors.AppStarting : Cursors.Default;
+            });
         }
+
+        private static string Glyph(StatusKind kind) => kind switch
+        {
+            StatusKind.Busy => "◐",
+            StatusKind.Ok => "●",
+            StatusKind.Error => "▲",
+            _ => "○",
+        };
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -293,8 +361,9 @@ namespace CP2077SaveEditor.Views
                 File.Copy(fileName, Path.Combine(fileDirectory, "sav.old"));
             }
 
-            SetStatus("Saving...");
+            SetStatus("Writing save file", StatusKind.Busy);
             _isSaving = true;
+            var saved = true;
 
             try
             {
@@ -343,6 +412,8 @@ namespace CP2077SaveEditor.Views
             }
             catch (Exception err)
             {
+                saved = false;
+
                 try
                 {
                     await File.WriteAllTextAsync("error.txt", err.Message + '\n' + err.TargetSite + '\n' + err.StackTrace);
@@ -360,7 +431,7 @@ namespace CP2077SaveEditor.Views
             saveChangesButton.Enabled = true;
 
             _isSaving = false;
-            SetStatus("File saved.");
+            SetStatus(saved ? "Changes saved" : "Save failed", saved ? StatusKind.Ok : StatusKind.Error);
 
             GC.Collect();
         }

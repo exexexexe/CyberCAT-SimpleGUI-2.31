@@ -314,7 +314,8 @@ namespace CP2077SaveEditor.Views.Controls
                     if (equippedItem != null)
                     {
                         equippedItem.SubItems[3].Text = equipInfo.Value;
-                        equippedItem.BackColor = Color.FromArgb(248, 248, 248);
+                        equippedItem.BackColor = Theme.Raised;
+                        equippedItem.ForeColor = Theme.Accent;
                         listViewRows.Remove(equippedItem);
                         listViewRows.Insert(0, equippedItem);
                     }
@@ -327,7 +328,7 @@ namespace CP2077SaveEditor.Views.Controls
 
         private void inventorySearchBox_TextChanged(object sender, EventArgs e)
         {
-            if (inventorySearchBox.ForeColor != Color.Silver)
+            if (inventorySearchBox.ForeColor != Theme.TextDim)
             {
                 var query = inventorySearchBox.Text;
                 if (query.StartsWith("name:"))
@@ -551,10 +552,10 @@ namespace CP2077SaveEditor.Views.Controls
 
         private void SearchBoxGotFocus(object sender, EventArgs e)
         {
-            if (((TextBox)sender).Text == "Search" && ((TextBox)sender).ForeColor == Color.Silver)
+            if (((TextBox)sender).Text == "Search" && ((TextBox)sender).ForeColor == Theme.TextDim)
             {
                 ((TextBox)sender).Text = "";
-                ((TextBox)sender).ForeColor = Color.Black;
+                ((TextBox)sender).ForeColor = Theme.Text;
             }
         }
 
@@ -562,7 +563,7 @@ namespace CP2077SaveEditor.Views.Controls
         {
             if (((TextBox)sender).Text == "")
             {
-                ((TextBox)sender).ForeColor = Color.Silver;
+                ((TextBox)sender).ForeColor = Theme.TextDim;
                 ((TextBox)sender).Text = "Search";
             }
         }

@@ -5,6 +5,7 @@ using WolvenKit.RED4.Archive.Buffer;
 using WolvenKit.RED4.Types;
 using static WolvenKit.RED4.Types.Enums;
 using WolvenKit.RED4.Save.Classes;
+using CP2077SaveEditor.Utils;
 
 namespace CP2077SaveEditor
 {
@@ -19,6 +20,7 @@ namespace CP2077SaveEditor
         public ItemDetails()
         {
             InitializeComponent();
+            Theme.Apply(this);
 
             modsTreeView.NodeMouseDoubleClick += modsTreeView_DoubleClick;
             modsTreeView.KeyDown += modsTreeView_KeyDown;

@@ -41,6 +41,7 @@ namespace CP2077SaveEditor.Views
             tssl_Status = new System.Windows.Forms.ToolStripStatusLabel();
             tssl_Empty = new System.Windows.Forms.ToolStripStatusLabel();
             tssl_Info = new System.Windows.Forms.ToolStripStatusLabel();
+            activityBar = new Controls.ActivityBar();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,6 +57,7 @@ namespace CP2077SaveEditor.Views
             swapSaveType.Size = new System.Drawing.Size(143, 15);
             swapSaveType.TabIndex = 4;
             swapSaveType.Text = "Save Type: PC";
+            swapSaveType.Variant = ButtonVariant.Ghost;
             swapSaveType.TextColor = System.Drawing.SystemColors.ControlText;
             swapSaveType.TextFont = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             swapSaveType.Click += swapSaveType_Click;
@@ -83,6 +85,7 @@ namespace CP2077SaveEditor.Views
             openSaveButton.Size = new System.Drawing.Size(143, 55);
             openSaveButton.TabIndex = 3;
             openSaveButton.Text = "Load Save";
+            openSaveButton.Variant = ButtonVariant.Primary;
             openSaveButton.TextColor = System.Drawing.SystemColors.ControlText;
             openSaveButton.TextFont = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             openSaveButton.Click += openSaveButton_Click;
@@ -101,6 +104,7 @@ namespace CP2077SaveEditor.Views
             saveChangesButton.Size = new System.Drawing.Size(143, 44);
             saveChangesButton.TabIndex = 7;
             saveChangesButton.Text = "Save Changes";
+            saveChangesButton.Variant = ButtonVariant.Primary;
             saveChangesButton.TextColor = System.Drawing.SystemColors.ControlText;
             saveChangesButton.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             saveChangesButton.Click += saveChangesButton_Click;
@@ -148,13 +152,22 @@ namespace CP2077SaveEditor.Views
             // 
             tssl_Info.Name = "tssl_Info";
             tssl_Info.Size = new System.Drawing.Size(321, 17);
-            tssl_Info.Text = "v0.27d // WolvenKit.RED4.Save by the WolvenKit team.";
+            tssl_Info.Text = "v0.27d-2.31  //  WolvenKit.RED4.Save by the WolvenKit team.";
+            // 
+            // activityBar
+            // 
+            activityBar.Dock = System.Windows.Forms.DockStyle.Top;
+            activityBar.Name = "activityBar";
+            activityBar.Size = new System.Drawing.Size(1024, 3);
+            activityBar.TabIndex = 11;
+            activityBar.TabStop = false;
             // 
             // Form2
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1024, 594);
+            Controls.Add(activityBar);
             Controls.Add(statusStrip1);
             Controls.Add(pnl_Content);
             Controls.Add(sm_Menu);
@@ -185,5 +198,6 @@ namespace CP2077SaveEditor.Views
         private System.Windows.Forms.ToolStripStatusLabel tssl_Status;
         private System.Windows.Forms.ToolStripStatusLabel tssl_Empty;
         private System.Windows.Forms.ToolStripStatusLabel tssl_Info;
+        private Controls.ActivityBar activityBar;
     }
 }
