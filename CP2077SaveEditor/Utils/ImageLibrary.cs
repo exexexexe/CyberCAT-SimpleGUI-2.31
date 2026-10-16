@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -346,7 +346,7 @@ public static class ImageLibrary
             // Identify the tool honestly, and send the Referer the image host expects --
             // without it the CDN answers with a bot challenge instead of the picture.
             client.DefaultRequestHeaders.UserAgent.ParseAdd(
-                "CP2077SaveEditor/0.28 (+https://github.com/exexexexe/CyberCAT-SimpleGUI-2.31)");
+                "CP2077SaveEditor/0.29 (+https://github.com/exexexexe/CyberCAT-SimpleGUI-2.31)");
             client.DefaultRequestHeaders.Referrer = new Uri("https://cyberpunk.fandom.com/");
             client.DefaultRequestHeaders.Accept.ParseAdd("image/png,image/jpeg");
 
