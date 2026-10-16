@@ -27,6 +27,24 @@ Edit the quantity, flags, & mod tree of items in your inventory.                
 Edit quest facts.                                                               | Stable
 Quick actions - dedicated controls for changing money & making items legendary. | Semi-Stable
 
+## Pictures
+
+Selecting a vehicle, or an iconic weapon in your inventory, shows a picture of it
+beside the list.
+
+The id-to-picture map is generated offline by `tools/build-image-map.py` from the
+Cyberpunk wiki and ships inside the exe, so the editor never scrapes anything at
+runtime. It fetches the bytes of a picture you actually look at, once, then keeps
+it in `%LOCALAPPDATA%\CP2077SaveEditor\images`. No pictures are redistributed with
+the editor. Set `"EnableImages": 0` in `config.json` to switch the network access
+off entirely; everything else works the same, you just get no pictures.
+
+Coverage is all 75 vehicles and 142 iconic weapon ids. Ordinary guns are not
+covered -- the wiki documents named weapons, not every preset -- so most inventory
+rows show nothing, by design. Vehicles are matched on their name rather than an
+id, and variants fall back to their base model's picture; where the match was not
+exact the pane says "closest match" instead of pretending.
+
 ## Game Version Support
 
 **Game Version**    | **Support** | **CyberCAT-SimpleGUI Version**

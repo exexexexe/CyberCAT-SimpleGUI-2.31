@@ -73,6 +73,12 @@ namespace CP2077SaveEditor.Views
                     {
                         Global.IsDebug = true;
                     }
+
+                    // Opt out of the one thing in here that touches the network.
+                    if (config.ContainsKey("EnableImages") && config["EnableImages"] == 0)
+                    {
+                        ImageLibrary.Enabled = false;
+                    }
                 }
                 catch (Exception)
                 {

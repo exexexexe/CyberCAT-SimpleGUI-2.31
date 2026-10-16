@@ -1,0 +1,895 @@
+{
+ "entries": {
+  "Items.Common_Ajax_Moron": {
+   "n": "Moron Labe",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d4/Ajax_Moron.png"
+  },
+  "Items.Common_Burya_Comrade": {
+   "n": "Comrade's Hammer",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/21/Burya_Comrade.png"
+  },
+  "Items.Common_Copperhead_Genesis": {
+   "n": "Psalm 11:6",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f3/Copperhead_Genesis.png"
+  },
+  "Items.Common_Nekomata_Breakthrough": {
+   "n": "Breakthrough",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/61/Nekomata_Breakthrough.png"
+  },
+  "Items.Common_Pulsar_Buzzsaw": {
+   "n": "Buzzsaw",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Pulsar_Buzzsaw.png"
+  },
+  "Items.Common_Zhuo_Eight_Star": {
+   "n": "Ba Xing Chong",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2a/Zhuo_Eight_Star.png"
+  },
+  "Items.Epic_Ajax_Moron": {
+   "n": "Moron Labe",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d4/Ajax_Moron.png"
+  },
+  "Items.Epic_Burya_Comrade": {
+   "n": "Comrade's Hammer",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/21/Burya_Comrade.png"
+  },
+  "Items.Epic_Copperhead_Genesis": {
+   "n": "Psalm 11:6",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f3/Copperhead_Genesis.png"
+  },
+  "Items.Epic_Nekomata_Breakthrough": {
+   "n": "Breakthrough",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/61/Nekomata_Breakthrough.png"
+  },
+  "Items.Epic_Pulsar_Buzzsaw": {
+   "n": "Buzzsaw",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Pulsar_Buzzsaw.png"
+  },
+  "Items.Epic_Zhuo_Eight_Star": {
+   "n": "Ba Xing Chong",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2a/Zhuo_Eight_Star.png"
+  },
+  "Items.Legendary_Ajax_Moron": {
+   "n": "Moron Labe",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d4/Ajax_Moron.png"
+  },
+  "Items.Legendary_Burya_Comrade": {
+   "n": "Comrade's Hammer",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/21/Burya_Comrade.png"
+  },
+  "Items.Legendary_Copperhead_Genesis": {
+   "n": "Psalm 11:6",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f3/Copperhead_Genesis.png"
+  },
+  "Items.Legendary_Nekomata_Breakthrough": {
+   "n": "Breakthrough",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/61/Nekomata_Breakthrough.png"
+  },
+  "Items.Legendary_Pulsar_Buzzsaw": {
+   "n": "Buzzsaw",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Pulsar_Buzzsaw.png"
+  },
+  "Items.Legendary_Zhuo_Eight_Star": {
+   "n": "Ba Xing Chong",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2a/Zhuo_Eight_Star.png"
+  },
+  "Items.Preset_Achilles_Collectible": {
+   "n": "Achilles x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f2/Achilles_Collectible.png"
+  },
+  "Items.Preset_Achilles_Nash": {
+   "n": "Widow Maker",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/7/76/Achilles_Nash.png"
+  },
+  "Items.Preset_Ajax_Amazon": {
+   "n": "Pit Bull",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2b/Ajax_Amazon.png"
+  },
+  "Items.Preset_Ashura_Twitch": {
+   "n": "Yasha",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/87/Ashura_Twitch.png"
+  },
+  "Items.Preset_Baseball_Bat_Denny": {
+   "n": "Gold-plated baseball bat",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/7/76/Baseball_Bat_Denny.png"
+  },
+  "Items.Preset_Baseball_Bat_Legendary": {
+   "n": "Baseball Bat x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/07/Baseball_Bat_Legendary.png"
+  },
+  "Items.Preset_Baseball_Bat_Malina": {
+   "n": "Baby Boomer",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/1/12/Baseball_Bat_Malina.png"
+  },
+  "Items.Preset_Baton_Murphy": {
+   "n": "Murphy's Law",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/97/Baton_Murphy.png"
+  },
+  "Items.Preset_Baton_Tinker_Bell": {
+   "n": "Tinker Bell",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/42/Baton_Tinker_Bell.png"
+  },
+  "Items.Preset_Borg4a_HauntedGun": {
+   "n": "Erebus",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/ab/Borg4a_HauntedGun.png"
+  },
+  "Items.Preset_Burya_AirDrop": {
+   "n": "Laika",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/99/Burya_AirDrop.png"
+  },
+  "Items.Preset_Butchers_Knife_Iconic": {
+   "n": "Butcher's Cleaver",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/1/12/Butchers_Knife_Iconic.png"
+  },
+  "Items.Preset_Cane_Fingers": {
+   "n": "Cottonmouth",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d6/Cane_Fingers.png"
+  },
+  "Items.Preset_Carnage_Edgerunners": {
+   "n": "Guts",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2b/Carnage_Edgerunners.png"
+  },
+  "Items.Preset_Carnage_Mox": {
+   "n": "Mox",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/db/Carnage_Mox.png"
+  },
+  "Items.Preset_Chainsword_Legendary": {
+   "n": "Cut-o-Matic x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/0d/Chainsword_Legendary.png"
+  },
+  "Items.Preset_Chao_VooDoo": {
+   "n": "Ogou",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ce/Chao_VooDoo.png"
+  },
+  "Items.Preset_Crowbar_Bunker": {
+   "n": "Crowbar (iconic)",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/0e/Crowbar_Bunker.png"
+  },
+  "Items.Preset_Crusher_Amazon": {
+   "n": "Amstaff",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/7/70/Crusher_Amazon.png"
+  },
+  "Items.Preset_Defender_Kurt": {
+   "n": "Wild Dog",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d3/Defender_Kurt.png"
+  },
+  "Items.Preset_Dian_Yinglong": {
+   "n": "Yinglong",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/3/38/Dian_Yinglong.png"
+  },
+  "Items.Preset_Dildo_SexShop": {
+   "n": "BFC 9000",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/b5/Dildo_SexShop.png"
+  },
+  "Items.Preset_Dildo_Stout": {
+   "n": "Sir John Phallustiff",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/0d/Dildo_Stout.png"
+  },
+  "Items.Preset_Fanged_Axe_Collectible": {
+   "n": "Claw x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d7/Fanged_Axe_Collectible.png"
+  },
+  "Items.Preset_Grad_AirDrop": {
+   "n": "Borzaya",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/43/Grad_AirDrop.png"
+  },
+  "Items.Preset_Grad_Buck": {
+   "n": "O'Five",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/fb/Grad_Buck.png"
+  },
+  "Items.Preset_Grad_Panam": {
+   "n": "Overwatch",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c3/Grad_Panam.png"
+  },
+  "Items.Preset_Grad_Scav": {
+   "n": "Sparky",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2a/Grad_Scav.png"
+  },
+  "Items.Preset_Grit_Amazon": {
+   "n": "Catahoula",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/ac/Grit_Amazon.png"
+  },
+  "Items.Preset_Guillotine_Collectible": {
+   "n": "Guillotine x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2e/Guillotine_Legendary.png"
+  },
+  "Items.Preset_Hercules_Prototype": {
+   "n": "Militech Hercules 3AX",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/1/17/Hercules_Prototype.png"
+  },
+  "Items.Preset_Igla_Sovereign": {
+   "n": "Sovereign",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/9f/Igla_Sovereign.png"
+  },
+  "Items.Preset_Kappa_George": {
+   "n": "Crimestopper",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/b4/Kappa_George.png"
+  },
+  "Items.Preset_Kappa_Legendary": {
+   "n": "Kappa x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/93/Kappa_Legendary.png"
+  },
+  "Items.Preset_Katana_Cocktail": {
+   "n": "Cocktail Stick",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/41/Katana_Cocktail.png"
+  },
+  "Items.Preset_Katana_E3": {
+   "n": "Errata",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/6e/Katana_E3.png"
+  },
+  "Items.Preset_Katana_GoG": {
+   "n": "Black Unicorn",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Katana_GoG.png"
+  },
+  "Items.Preset_Katana_Hiromi": {
+   "n": "Tsumetogi",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/95/Katana_Hiromi.png"
+  },
+  "Items.Preset_Katana_Saburo": {
+   "n": "Satori",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/a9/Katana_Saburo.png"
+  },
+  "Items.Preset_Katana_Surgeon": {
+   "n": "Scalpel",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/3/33/Katana_Surgeon.png"
+  },
+  "Items.Preset_Katana_Takemura": {
+   "n": "Jinchu-maru",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/84/Katana_Takemura.png"
+  },
+  "Items.Preset_Katana_Wakako": {
+   "n": "Byakko",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/20/Katana_Wakako.png"
+  },
+  "Items.Preset_Kenshin_Frank": {
+   "n": "Apparition",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/dc/Kenshin_Frank.png"
+  },
+  "Items.Preset_Kenshin_Royce": {
+   "n": "Chaos",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/64/Kenshin_Royce.png"
+  },
+  "Items.Preset_Kenshin_Spy": {
+   "n": "Ambition",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/55/Kenshin_Spy.png"
+  },
+  "Items.Preset_Knife_Kurtz_1": {
+   "n": "Fang",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/48/Knife_Kurtz.png"
+  },
+  "Items.Preset_Knife_Stinger": {
+   "n": "Stinger",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/0b/Knife_Stinger.png"
+  },
+  "Items.Preset_Kolac_Tiny_Mike": {
+   "n": "Hypercritical",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ca/Kolac_Tiny_Mike.png"
+  },
+  "Items.Preset_Kyubi_Amazon": {
+   "n": "Chinook",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/ac/Kyubi_Amazon.png"
+  },
+  "Items.Preset_Kyubi_Legendary": {
+   "n": "Kyubi x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/ed/Kyubi_Legendary.png"
+  },
+  "Items.Preset_Kyubi_Myers": {
+   "n": "Hawk",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f0/Kyubi_Myers.png"
+  },
+  "Items.Preset_Lexington_Rook": {
+   "n": "Rook",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f1/Lexington_Rook.png"
+  },
+  "Items.Preset_Lexington_Shooting_Competition": {
+   "n": "Lexington x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/9c/Lexington_Shooting_Competition.png"
+  },
+  "Items.Preset_Lexington_Wilson": {
+   "n": "Dying Night",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/ea/Lexington_Wilson.png"
+  },
+  "Items.Preset_Liberty_Dex": {
+   "n": "Plan B",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/db/Liberty_Dex.png"
+  },
+  "Items.Preset_Liberty_Padre": {
+   "n": "Seraph",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cd/Liberty_Padre.png"
+  },
+  "Items.Preset_Liberty_Rogue": {
+   "n": "Pride",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/03/Liberty_Rogue.png"
+  },
+  "Items.Preset_Liberty_Yorinobu": {
+   "n": "Kongou",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/1/1f/Liberty_Yorinobu.png"
+  },
+  "Items.Preset_MA70_Collectible": {
+   "n": "MA70 HB x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/45/MA70_Collectible.png"
+  },
+  "Items.Preset_Machete_Borg_AirDrop": {
+   "n": "Volkodav",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/57/Machete_Borg_AirDrop.png"
+  },
+  "Items.Preset_Masamune_Rogue": {
+   "n": "Prejudice",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/05/Masamune_Rogue.png"
+  },
+  "Items.Preset_Metel_AirDrop": {
+   "n": "Taigan",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c2/Metel_AirDrop.png"
+  },
+  "Items.Preset_Metel_Kurt": {
+   "n": "Bald Eagle",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/e4/Metel_Kurt.png"
+  },
+  "Items.Preset_Nekomata_Amazon": {
+   "n": "Foxhound",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/ab/Nekomata_Amazon.png"
+  },
+  "Items.Preset_Nekomata_Breakthrough": {
+   "n": "Breakthrough",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/61/Nekomata_Breakthrough.png"
+  },
+  "Items.Preset_Neurotoxin_Knife_Iconic": {
+   "n": "Blue Fang",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/1/10/Neurotoxin_Knife_Iconic.png"
+  },
+  "Items.Preset_Nova_Doom_Doom": {
+   "n": "Doom Doom",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/0b/Nova_Doom_Doom.png"
+  },
+  "Items.Preset_Nova_Hitman": {
+   "n": "Mancinella",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/8e/Nova_Hitman.png"
+  },
+  "Items.Preset_Nue_Bree": {
+   "n": "Riskit",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/7/7f/Nue_Bree.png"
+  },
+  "Items.Preset_Nue_Jackie": {
+   "n": "La Chingona Dorada",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/7/7a/Nue_Jackie.png"
+  },
+  "Items.Preset_Nue_Maiko": {
+   "n": "Death and Taxes",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/be/Nue_Maiko.png"
+  },
+  "Items.Preset_Omaha_Suzie": {
+   "n": "Lizzie",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/90/Omaha_Suzie.png"
+  },
+  "Items.Preset_Osprey_Prototype": {
+   "n": "Nokota Osprey",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/ef/Osprey_Prototype.png"
+  },
+  "Items.Preset_Overture_Cassidy": {
+   "n": "Amnesty",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/54/Overture_Cassidy.png"
+  },
+  "Items.Preset_Overture_Dante": {
+   "n": "Ol' Reliable",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/54/Overture_Cassidy.png"
+  },
+  "Items.Preset_Overture_Dodger": {
+   "n": "Rosco",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/89/Overture_Dodger.png"
+  },
+  "Items.Preset_Overture_Kerry": {
+   "n": "Archangel",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/25/Overture_Kerry.png"
+  },
+  "Items.Preset_Overture_River": {
+   "n": "Crash",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/58/Overture_River.png"
+  },
+  "Items.Preset_Pozhar_AirDrop": {
+   "n": "Alabai",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/43/Pozhar_AirDrop.png"
+  },
+  "Items.Preset_Pozhar_Legendary": {
+   "n": "Pozhar x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/a6/Pozhar_Legendary.png"
+  },
+  "Items.Preset_Punk_Knife_Iconic": {
+   "n": "Headhunter",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/8a/Punk_Knife_Iconic.png"
+  },
+  "Items.Preset_Quasar_Baron": {
+   "n": "Gris-Gris",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d1/Quasar_Baron.png"
+  },
+  "Items.Preset_Rasetsu_Prototype": {
+   "n": "Tsunami Rasetsu",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Rasetsu_Prototype.png"
+  },
+  "Items.Preset_Saratoga_Maelstrom": {
+   "n": "Fenrir",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/09/Saratoga_Maelstrom.png"
+  },
+  "Items.Preset_Saratoga_Raffen": {
+   "n": "Problem Solver",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/9d/Saratoga_Raffen.png"
+  },
+  "Items.Preset_Satara_Brick": {
+   "n": "Order",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f2/Satara_Brick.png"
+  },
+  "Items.Preset_Senkoh_Prototype": {
+   "n": "Raiju",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/e5/Senkoh_Prototype.png"
+  },
+  "Items.Preset_Shingen_Prototype": {
+   "n": "Prototype: Shingen Mark V",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c9/Shingen_Prototype.png"
+  },
+  "Items.Preset_Shovel_Caretaker": {
+   "n": "Caretaker's Spade",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c8/Shovel_Caretaker.png"
+  },
+  "Items.Preset_Sidewinder_Divided": {
+   "n": "Divided We Stand",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c9/Sidewinder_Divided.png"
+  },
+  "Items.Preset_Silverhand_3516": {
+   "n": "Malorian Arms 3516 (2077)",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/91/Silverhand_3516.png"
+  },
+  "Items.Preset_Sword_Witcher": {
+   "n": "Gwynbleidd",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/1/16/Sword_Witcher.png"
+  },
+  "Items.Preset_Tactician_Dino": {
+   "n": "Bloody Maria",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/8f/Tactician_Dino.png"
+  },
+  "Items.Preset_Tactician_Headsman": {
+   "n": "The Headsman",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/ea/Tactician_Headsman.png"
+  },
+  "Items.Preset_Tanto_Saburo": {
+   "n": "Nehan",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/46/Tanto_Saburo.png"
+  },
+  "Items.Preset_Testera_Nicolas": {
+   "n": "Dezerter",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/4d/Testera_Nicolas.png"
+  },
+  "Items.Preset_Ticon_Gwent": {
+   "n": "Scorch",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/8b/Ticon_Gwent.png"
+  },
+  "Items.Preset_Ticon_Reed": {
+   "n": "Pariah",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/6a/Ticon_Reed.png"
+  },
+  "Items.Preset_Umbra_Bebe": {
+   "n": "Carmen",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/02/Umbra_Bebe.png"
+  },
+  "Items.Preset_Umbra_Collectible": {
+   "n": "Umbra x-MOD2",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/b4/Umbra_Legendary.png"
+  },
+  "Items.Preset_Unity_Agent": {
+   "n": "Her Majesty",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/5e/Unity_Agent.png"
+  },
+  "Items.Preset_Unity_Angelica": {
+   "n": "Cheetah",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/54/Unity_Angelica.png"
+  },
+  "Items.Preset_VB_Axe": {
+   "n": "Agaou",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/b5/VB_Axe.png"
+  },
+  "Items.Preset_Warden_Amazon": {
+   "n": "Chesapeake",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ce/Warden_Amazon.png"
+  },
+  "Items.Preset_Warden_Boris": {
+   "n": "Pizdets",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/61/Warden_Boris.png"
+  },
+  "Items.Preset_Yukimura_Kiji": {
+   "n": "Genjiroh",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/84/Yukimura_Kiji.png"
+  },
+  "Items.Preset_Yukimura_Skippy": {
+   "n": "Skippy",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/67/Yukimura_Skippy.png"
+  },
+  "Items.Preset_Yukimura_Skippy_PostQuest": {
+   "n": "Skippy",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/67/Yukimura_Skippy.png"
+  },
+  "Items.Rare_Ajax_Moron": {
+   "n": "Moron Labe",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d4/Ajax_Moron.png"
+  },
+  "Items.Rare_Burya_Comrade": {
+   "n": "Comrade's Hammer",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/21/Burya_Comrade.png"
+  },
+  "Items.Rare_Copperhead_Genesis": {
+   "n": "Psalm 11:6",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f3/Copperhead_Genesis.png"
+  },
+  "Items.Rare_Nekomata_Breakthrough": {
+   "n": "Breakthrough",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/61/Nekomata_Breakthrough.png"
+  },
+  "Items.Rare_Pulsar_Buzzsaw": {
+   "n": "Buzzsaw",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Pulsar_Buzzsaw.png"
+  },
+  "Items.Rare_Zhuo_Eight_Star": {
+   "n": "Ba Xing Chong",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2a/Zhuo_Eight_Star.png"
+  },
+  "Items.Uncommon_Ajax_Moron": {
+   "n": "Moron Labe",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d4/Ajax_Moron.png"
+  },
+  "Items.Uncommon_Burya_Comrade": {
+   "n": "Comrade's Hammer",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/21/Burya_Comrade.png"
+  },
+  "Items.Uncommon_Copperhead_Genesis": {
+   "n": "Psalm 11:6",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f3/Copperhead_Genesis.png"
+  },
+  "Items.Uncommon_Nekomata_Breakthrough": {
+   "n": "Breakthrough",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/61/Nekomata_Breakthrough.png"
+  },
+  "Items.Uncommon_Pulsar_Buzzsaw": {
+   "n": "Buzzsaw",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/cb/Pulsar_Buzzsaw.png"
+  },
+  "Items.Uncommon_Zhuo_Eight_Star": {
+   "n": "Ba Xing Chong",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2a/Zhuo_Eight_Star.png"
+  },
+  "Items.mq001_scorpions_knife": {
+   "n": "Stinger",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/0b/Knife_Stinger.png"
+  },
+  "Items.mq007_Skippy": {
+   "n": "Skippy",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/67/Yukimura_Skippy.png"
+  },
+  "Items.mq008_golden_knuckledusters": {
+   "n": "Divided We Stand",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c9/Sidewinder_Divided.png"
+  },
+  "Items.w_melee_boss_hammer": {
+   "n": "Sasquatch's Hammer",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d1/Hammer_Sasquatch.png"
+  },
+  "Vehicle.v_sport1_herrera_outlaw_heist_player": {
+   "n": "Herrera Outlaw GTS",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f4/Herrera_Outlaw_GTS_Database_CP2077.png"
+  },
+  "Vehicle.v_sport1_herrera_outlaw_player": {
+   "n": "Herrera Outlaw GTS",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f4/Herrera_Outlaw_GTS_Database_CP2077.png"
+  },
+  "Vehicle.v_sport1_herrera_riptide_player": {
+   "n": "Herrera Outlaw GTS",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f4/Herrera_Outlaw_GTS_Database_CP2077.png"
+  },
+  "Vehicle.v_sport1_quadra_sport_r7_mrhands": {
+   "n": "Quadra Sport R-7 \"Vigilante\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/e5/Quadra_Sport_R-7_Vigilante_CP2077.png"
+  },
+  "Vehicle.v_sport1_quadra_sport_r7_netrunner": {
+   "n": "Quadra Sport R-7 \"Vigilante\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/e5/Quadra_Sport_R-7_Vigilante_CP2077.png"
+  },
+  "Vehicle.v_sport1_quadra_sport_r7_player": {
+   "n": "Quadra Sport R-7 \"Vigilante\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/e5/Quadra_Sport_R-7_Vigilante_CP2077.png"
+  },
+  "Vehicle.v_sport1_quadra_sport_r7_player_02": {
+   "n": "Quadra Sport R-7 \"Vigilante\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/e/e5/Quadra_Sport_R-7_Vigilante_CP2077.png"
+  },
+  "Vehicle.v_sport1_quadra_turbo_player": {
+   "n": "Quadra Turbo-R \"Raijin\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/7/76/Quadra_Turbo-R_Raijin_Front_Quarter.png"
+  },
+  "Vehicle.v_sport1_quadra_turbo_r_player": {
+   "n": "Quadra Turbo-R \"Raijin\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/7/76/Quadra_Turbo-R_Raijin_Front_Quarter.png"
+  },
+  "Vehicle.v_sport1_rayfield_aerondight_player": {
+   "n": "Rayfield Aerondight \"Guinevere\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c4/Rayfield_Aerondight_%22Guinevere%22_Database_CP2077.png"
+  },
+  "Vehicle.v_sport1_rayfield_caliburn_02_player": {
+   "n": "Rayfield Caliburn",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/fb/Rayfield_Caliburn_Database_CP2077.png"
+  },
+  "Vehicle.v_sport1_rayfield_caliburn_player": {
+   "n": "Rayfield Caliburn",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/fb/Rayfield_Caliburn_Database_CP2077.png"
+  },
+  "Vehicle.v_sport2_mizutani_shion_nomad_02_player": {
+   "n": "Mizutani Shion \"Bonewrecker\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/af/Mizutani_Shion_Bonewrecker_1.png"
+  },
+  "Vehicle.v_sport2_mizutani_shion_nomad_player": {
+   "n": "Mizutani Shion \"Bonewrecker\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/af/Mizutani_Shion_Bonewrecker_1.png"
+  },
+  "Vehicle.v_sport2_mizutani_shion_nomad_player_missiles": {
+   "n": "Mizutani Shion \"Bonewrecker\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/af/Mizutani_Shion_Bonewrecker_1.png"
+  },
+  "Vehicle.v_sport2_mizutani_shion_player": {
+   "n": "Mizutani Shion \"Bonewrecker\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/af/Mizutani_Shion_Bonewrecker_1.png"
+  },
+  "Vehicle.v_sport2_porsche_911turbo_cabrio_player": {
+   "n": "Porsche 911 Turbo (930)",
+   "s": 0.75,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/48/Porsche_911_Turbo_%28930%29_Database_CP2077.png"
+  },
+  "Vehicle.v_sport2_porsche_911turbo_player": {
+   "n": "Porsche 911 Turbo (930)",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/48/Porsche_911_Turbo_%28930%29_Database_CP2077.png"
+  },
+  "Vehicle.v_sport2_quadra_type66_02_player": {
+   "n": "Quadra Type-66 \"BULITT\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ca/Quadra_Type-66_640_TS_V_Message_CP2077.png"
+  },
+  "Vehicle.v_sport2_quadra_type66_avenger_player": {
+   "n": "Quadra Type-66 Avenger",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/00/Quadra_Type-66_Avenger_Database_CP2077.png"
+  },
+  "Vehicle.v_sport2_quadra_type66_nomad_ncu_player": {
+   "n": "Quadra Type-66 \"BULITT\"",
+   "s": 0.75,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ca/Quadra_Type-66_640_TS_V_Message_CP2077.png"
+  },
+  "Vehicle.v_sport2_quadra_type66_nomad_player": {
+   "n": "Quadra Type-66 \"BULITT\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ca/Quadra_Type-66_640_TS_V_Message_CP2077.png"
+  },
+  "Vehicle.v_sport2_quadra_type66_nomad_player_03": {
+   "n": "Quadra Type-66 \"BULITT\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ca/Quadra_Type-66_640_TS_V_Message_CP2077.png"
+  },
+  "Vehicle.v_sport2_quadra_type66_nomad_tribute": {
+   "n": "Quadra Type-66 \"BULITT\"",
+   "s": 0.75,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ca/Quadra_Type-66_640_TS_V_Message_CP2077.png"
+  },
+  "Vehicle.v_sport2_quadra_type66_player": {
+   "n": "Quadra Type-66 \"BULITT\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/ca/Quadra_Type-66_640_TS_V_Message_CP2077.png"
+  },
+  "Vehicle.v_sport2_villefort_alvarado_hearse_player": {
+   "n": "Villefort Alvarado \"Vato\"",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/05/Villefort_Alvarado_Vato_Front_quarter.png"
+  },
+  "Vehicle.v_sport2_villefort_alvarado_player": {
+   "n": "Villefort Alvarado \"Vato\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/05/Villefort_Alvarado_Vato_Front_quarter.png"
+  },
+  "Vehicle.v_sport2_villefort_alvarado_valentinos_player": {
+   "n": "Villefort Alvarado \"Vato\"",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/05/Villefort_Alvarado_Vato_Front_quarter.png"
+  },
+  "Vehicle.v_sport2_villefort_deleon_player": {
+   "n": "Villefort Alvarado \"Vato\"",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/0/05/Villefort_Alvarado_Vato_Front_quarter.png"
+  },
+  "Vehicle.v_sportbike1_yaiba_kusanagi_player": {
+   "n": "Yaiba Kusanagi \"Mizuchi\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/6e/Yaiba_Kusanagi_Mizuchi.jpg"
+  },
+  "Vehicle.v_sportbike1_yaiba_kusanagi_player_02": {
+   "n": "Yaiba Kusanagi \"Mizuchi\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/6e/Yaiba_Kusanagi_Mizuchi.jpg"
+  },
+  "Vehicle.v_sportbike1_yaiba_kusanagi_player_03": {
+   "n": "Yaiba Kusanagi \"Mizuchi\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/6e/Yaiba_Kusanagi_Mizuchi.jpg"
+  },
+  "Vehicle.v_sportbike1_yaiba_kusanagi_tyger_player": {
+   "n": "Yaiba Kusanagi \"Mizuchi\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/6e/Yaiba_Kusanagi_Mizuchi.jpg"
+  },
+  "Vehicle.v_sportbike2_arch_jackie_player": {
+   "n": "Jackie's ARCH",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/ba/Jackie%27s_ARCH_2.png"
+  },
+  "Vehicle.v_sportbike2_arch_jackie_tuned_player": {
+   "n": "Jackie's ARCH",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/ba/Jackie%27s_ARCH_2.png"
+  },
+  "Vehicle.v_sportbike2_arch_linas_player": {
+   "n": "ARCH Nazaré",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f1/Nazar%C3%A9_Database_CP2077.png"
+  },
+  "Vehicle.v_sportbike2_arch_player": {
+   "n": "ARCH Nazaré",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f1/Nazar%C3%A9_Database_CP2077.png"
+  },
+  "Vehicle.v_sportbike2_arch_player_02": {
+   "n": "ARCH Nazaré",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f1/Nazar%C3%A9_Database_CP2077.png"
+  },
+  "Vehicle.v_sportbike2_arch_player_03": {
+   "n": "ARCH Nazaré",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f1/Nazar%C3%A9_Database_CP2077.png"
+  },
+  "Vehicle.v_sportbike2_arch_tyger_player": {
+   "n": "ARCH Nazaré",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/f1/Nazar%C3%A9_Database_CP2077.png"
+  },
+  "Vehicle.v_sportbike3_brennan_apollo_nomad_player": {
+   "n": "Brennan Apollo",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/85/Brennan_Apollo_Database_CP2077.png"
+  },
+  "Vehicle.v_sportbike3_brennan_apollo_player": {
+   "n": "Brennan Apollo",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/85/Brennan_Apollo_Database_CP2077.png"
+  },
+  "Vehicle.v_sportbike3_brennan_apollo_player_02": {
+   "n": "Brennan Apollo",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/8/85/Brennan_Apollo_Database_CP2077.png"
+  },
+  "Vehicle.v_standard25_mahir_supron_player": {
+   "n": "Mahir Supron FS3",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/50/Mahir_Supron_FS3_Database_CP2077.png"
+  },
+  "Vehicle.v_standard25_thorton_colby_nomad_player": {
+   "n": "Thorton Colby \"Little Mule\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/95/Thorton_Colby_%22Little_Mule%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard25_thorton_colby_nomad_player_missiles": {
+   "n": "Thorton Colby \"Little Mule\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/95/Thorton_Colby_%22Little_Mule%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard25_thorton_colby_pickup_02_player": {
+   "n": "Thorton Colby \"Little Mule\"",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/95/Thorton_Colby_%22Little_Mule%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard25_thorton_colby_pickup_kurtz_player": {
+   "n": "Thorton Colby \"Little Mule\"",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/95/Thorton_Colby_%22Little_Mule%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard25_thorton_colby_pickup_player": {
+   "n": "Thorton Colby \"Little Mule\"",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/95/Thorton_Colby_%22Little_Mule%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard25_thorton_merrimac_player": {
+   "n": "Thorton Merrimac MSL3",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d3/Thorton_Merrimac_MSL3_CP2077.png"
+  },
+  "Vehicle.v_standard25_villefort_columbus_player": {
+   "n": "Villefort Columbus \"Sea Dragon\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/f/fe/Villefort_Columbus_Sea_Dragon.jpg"
+  },
+  "Vehicle.v_standard2_archer_bandit_player": {
+   "n": "Archer Quartz \"Bandit\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c0/Archer_Quartz_%22Bandit%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_archer_hella_player": {
+   "n": "Archer Hella EC-D i360",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/4/45/Archer_Hella_EC-D_i360_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_archer_quartz_nomad_player": {
+   "n": "Archer Quartz \"Bandit\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c0/Archer_Quartz_%22Bandit%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_archer_quartz_nomad_player_02": {
+   "n": "Archer Quartz \"Bandit\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c0/Archer_Quartz_%22Bandit%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_archer_quartz_player": {
+   "n": "Archer Quartz \"Bandit\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/c/c0/Archer_Quartz_%22Bandit%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_chevalier_thrax_player": {
+   "n": "Chevillon Thrax \"Fire Fang\"",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/29/Chevillon_Thrax_Fire_Fang_1.png"
+  },
+  "Vehicle.v_standard2_makigai_maimai_player": {
+   "n": "Makigai MaiMai E126",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/b/b8/Makigai_MaiMai_P126_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_mizutani_hozuki_player": {
+   "n": "Mizutani Shion \"Bonewrecker\"",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/af/Mizutani_Shion_Bonewrecker_1.png"
+  },
+  "Vehicle.v_standard2_thorton_colby_player": {
+   "n": "Thorton Colby \"Little Mule\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/9/95/Thorton_Colby_%22Little_Mule%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_thorton_galena_bobas_player": {
+   "n": "Thorton Galena \"Gecko\"",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/68/Thorton_Galena_%22Gecko%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_thorton_galena_nomad_player": {
+   "n": "Thorton Galena \"Gecko\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/68/Thorton_Galena_%22Gecko%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_thorton_galena_nomad_player_missiles": {
+   "n": "Thorton Galena \"Gecko\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/68/Thorton_Galena_%22Gecko%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_thorton_galena_player": {
+   "n": "Thorton Galena \"Gecko\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/6/68/Thorton_Galena_%22Gecko%22_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_villefort_cortes_delamain_player": {
+   "n": "Villefort Cortes V5000 Valor",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d0/Villefort_Cortes_V5000_Valor_%282040%29_Database_CP2077.png"
+  },
+  "Vehicle.v_standard2_villefort_cortes_player": {
+   "n": "Villefort Cortes V5000 Valor",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/d/d0/Villefort_Cortes_V5000_Valor_%282040%29_Database_CP2077.png"
+  },
+  "Vehicle.v_standard3_chevalier_emperor_player": {
+   "n": "Chevillon Emperor \"Dominator\"",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/3/35/Chevillon_Emperor_Dominator_2.png"
+  },
+  "Vehicle.v_standard3_mahir_supron_kurtz_player": {
+   "n": "Mahir Supron FS3",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/5/50/Mahir_Supron_FS3_Database_CP2077.png"
+  },
+  "Vehicle.v_standard3_makigai_tanishi_player": {
+   "n": "Makigai Tanishi T400",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/a6/Makigai_Tanishi_T400_-_Front_quarter_view.png"
+  },
+  "Vehicle.v_standard3_makigai_tanishi_player_mr_hands": {
+   "n": "Makigai Tanishi T400",
+   "s": 0.5,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/a/a6/Makigai_Tanishi_T400_-_Front_quarter_view.png"
+  },
+  "Vehicle.v_standard3_militech_hellhound_player": {
+   "n": "Militech Hellhound",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2f/Militech_Hellhound_Database_CP2077PL.png"
+  },
+  "Vehicle.v_standard3_thorton_mackinaw_02_player": {
+   "n": "Thorton Mackinaw \"Beast\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2e/Beast_Database_CP2077.png"
+  },
+  "Vehicle.v_standard3_thorton_mackinaw_ncu_player": {
+   "n": "Thorton Mackinaw \"Beast\"",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2e/Beast_Database_CP2077.png"
+  },
+  "Vehicle.v_standard3_thorton_mackinaw_player": {
+   "n": "Thorton Mackinaw \"Beast\"",
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2e/Beast_Database_CP2077.png"
+  },
+  "Vehicle.v_utility4_thorton_mackinaw_bmf_player": {
+   "n": "Thorton Mackinaw \"Beast\"",
+   "s": 0.67,
+   "u": "https://static.wikia.nocookie.net/cyberpunk/images/2/2e/Beast_Database_CP2077.png"
+  }
+ },
+ "generated": "2026-10-16",
+ "note": "Generated by tools/build-image-map.py. Do not edit by hand.",
+ "source": "cyberpunk.fandom.com"
+}

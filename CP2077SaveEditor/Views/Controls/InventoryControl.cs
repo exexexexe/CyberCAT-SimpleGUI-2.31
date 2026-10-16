@@ -22,6 +22,7 @@ namespace CP2077SaveEditor.Views.Controls
         }
 
         private readonly Form2 _parentForm;
+        private readonly ImagePreviewPanel _preview;
 
         private Random _random = new();
 
@@ -47,8 +48,36 @@ namespace CP2077SaveEditor.Views.Controls
         {
             InitializeComponent();
 
+            // Give the pane the right-hand slice of the list's box.
+            const int previewWidth = 300;
+            const int gap = 6;
+
+            inventoryListView.Width -= previewWidth + gap;
+
+            _preview = new ImagePreviewPanel
+            {
+                // Qualified: WolvenKit.RED4.Types has its own Point.
+                Location = new System.Drawing.Point(inventoryListView.Right + gap, inventoryListView.Top),
+                Size = new System.Drawing.Size(previewWidth, inventoryListView.Height),
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right,
+            };
+
+            containerGroupBox.Controls.Add(_preview);
+
+            inventoryListView.SelectedIndexChanged += InventoryListView_SelectedIndexChanged;
+
             _parentForm = parentForm;
             _parentForm.PropertyChanged += OnParentFormPropertyChanged;
+        }
+
+        private void InventoryListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selected = inventoryListView.SelectedVirtualItems().FirstOrDefault();
+            var id = selected?.Tag is ItemData data
+                ? data.ItemInfo.ItemId.Id.ResolvedText
+                : null;
+
+            _preview.Show(id);
         }
 
         public string GameControlName => "Inventory";

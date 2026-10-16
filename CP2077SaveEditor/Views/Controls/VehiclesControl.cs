@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
 using System.Text.Json;
 using System.Windows.Forms;
@@ -13,13 +14,32 @@ namespace CP2077SaveEditor.Views.Controls
     public partial class VehiclesControl : UserControl, IGameControl
     {
         private readonly Form2 _parentForm;
+        private readonly ImagePreviewPanel _preview;
 
         public VehiclesControl(Form2 parentForm)
         {
             InitializeComponent();
 
+            // Docked last, so it claims the right edge and the list keeps the rest.
+            _preview = new ImagePreviewPanel
+            {
+                Dock = DockStyle.Right,
+                Width = 320,
+            };
+
+            Controls.Add(_preview);
+
+            vehiclesListView.SelectedIndexChanged += VehiclesListView_SelectedIndexChanged;
+
             _parentForm = parentForm;
             _parentForm.PropertyChanged += OnParentFormPropertyChanged;
+        }
+
+        private void VehiclesListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Rows carry the vehicle's TweakDBID as their text.
+            var selected = vehiclesListView.SelectedVirtualItems().FirstOrDefault();
+            _preview.Show(selected?.Text);
         }
 
         public string GameControlName => "Unlocked Vehicles";

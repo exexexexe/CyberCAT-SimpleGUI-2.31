@@ -49,8 +49,8 @@ if (Test-Path $OutDir) { Remove-Item -LiteralPath $OutDir -Recurse -Force }
 # NOTE: never enable PublishTrimmed. WolvenKit resolves RED4 types by
 # reflection (RedTypeManager/Activator), so trimming breaks save parsing
 # at runtime rather than at build time.
-$args = @(
-    'publish', "$root\CP2077SaveEditor\CP2077SaveEditor.csproj",
+$common = @(
+    "$root\CP2077SaveEditor\CP2077SaveEditor.csproj",
     '-c', $Configuration, '-r', 'win-x64', '--self-contained', 'true',
     '-p:Platform=x64',
     # SolutionDir must be passed explicitly: the csproj PostBuild step
@@ -58,15 +58,29 @@ $args = @(
     "-p:SolutionDir=$root\",
     '-p:PublishTrimmed=false',
     '-p:DebugType=none', '-p:DebugSymbols=false',
-    '-o', $OutDir, '--nologo'
+    '--nologo'
 )
 if ($Layout -eq 'SingleFile') {
-    $args += @('-p:PublishSingleFile=true',
-               '-p:IncludeNativeLibrariesForSelfExtract=true',
-               '-p:EnableCompressionInSingleFile=true')
+    $common += @('-p:PublishSingleFile=true',
+                 '-p:IncludeNativeLibrariesForSelfExtract=true',
+                 '-p:EnableCompressionInSingleFile=true')
 }
 
-& $dotnet @args
+# Compile and publish as two steps on purpose.
+#
+# "dotnet publish" alone has been observed to reuse a stale RID-specific
+# (bin\...\win-x64) assembly while the plain build output was current, which
+# silently ships an exe built from older source -- the kind of thing you only
+# notice when a feature is missing from a release. Forcing a non-incremental
+# build first, then publishing with --no-build, makes the published binary
+# provably the one just compiled. ("publish" rejects --no-incremental, which
+# is why this cannot be one command.)
+$buildArgs = @('build') + $common + @('--no-incremental')
+& $dotnet @buildArgs
+if ($LASTEXITCODE -ne 0) { throw "build failed ($LASTEXITCODE)" }
+
+$publishArgs = @('publish') + $common + @('--no-build', '-o', $OutDir)
+& $dotnet @publishArgs
 if ($LASTEXITCODE -ne 0) { throw "publish failed ($LASTEXITCODE)" }
 
 # The csproj PostBuild copies these next to the *build* output, not the
