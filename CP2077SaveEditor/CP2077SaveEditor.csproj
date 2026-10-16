@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Platforms>x64</Platforms>
+    <!-- Design-time serialization analyzer; these controls are never designer-serialized. -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WolvenKit\WolvenKit.Common\WolvenKit.Common.csproj" />
+    <ProjectReference Include="..\WolvenKit\WolvenKit.Core\WolvenKit.Core.csproj" />
+    <ProjectReference Include="..\WolvenKit\WolvenKit.RED4\WolvenKit.RED4.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="XCOPY &quot;$(SolutionDir)\previews&quot; &quot;$(TargetDir)\previews\&quot; /S /Y /D&#xD;&#xA;XCOPY &quot;$(SolutionDir)\licenses&quot; &quot;$(TargetDir)\licenses\&quot; /S /Y /D&#xD;&#xA;XCOPY &quot;$(SolutionDir)\config.json&quot; &quot;$(TargetDir)&quot; /Y /D&#xD;&#xA;XCOPY &quot;$(SolutionDir)\items.bin&quot; &quot;$(TargetDir)&quot; /Y /D&#xD;&#xA;DEL &quot;$(TargetDir)\previews\info.txt&quot;" />
+  </Target>
+
+</Project>
