@@ -7,6 +7,17 @@ v0.27d, updated to read and write Cyberpunk 2077 **patch 2.31** saves: the
 WolvenKit submodule now tracks `main`, the editor targets .NET 10, and the
 call sites that moved in WolvenKit's API were brought forward.
 
+## Download
+
+Grab the latest **`CP2077SaveEditor-2.31-single.zip`** from
+[Releases](https://github.com/exexexexe/CyberCAT-SimpleGUI-2.31/releases/latest),
+extract it, and run `CP2077SaveEditor.exe`. Self-contained -- no .NET runtime
+to install. Keep the extracted folder together; the editor reads `previews\`,
+`licenses\` and `config.json` from its own directory.
+
+Back up your saves first. They live in
+`%USERPROFILE%\Saved Games\CD Projekt Red\Cyberpunk 2077\`.
+
 ## Features
 
 **Feature**                                                                     | **Stability**
